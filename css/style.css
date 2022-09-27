@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap');
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #8f8888;
+
+}
+
+.title{
+    text-align: center;
+    font-size: 43px;
+    padding: 20px 0;
+}
+
+.title span {
+  color: yellow;
+}
+
+.text{
+  text-align: center;
+  font-size: 20px;
+}
+
+
+ 
+  
