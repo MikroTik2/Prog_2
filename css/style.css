@@ -358,6 +358,7 @@ body{
 .home-price{
     display: flex;
     gap: 105px;
+    margin-bottom: 130px;
 }
 
 .header-price{
@@ -550,3 +551,124 @@ body{
     transition-property: all;
     transition-duration: 0.5s;
 }
+
+/*-----------------------------------Footer logo*/
+
+.footer{
+    background: #f7f7f7;
+    padding-top: 80px;
+    padding-bottom: 40px;
+   }
+   .footer__container{}
+   .footer__body{}
+   
+   .body-footer{
+    display: flex;
+    gap: 115px;
+   }
+   .body-footer__column{
+    flex: 0 1 33.333%;
+   }
+   .body-footer__logo{
+    display: inline-block;
+    
+   }
+   .body-footer__logo:not(:last-child){
+    margin-bottom: 28px;
+   }
+   .body-footer__contacts{}
+   
+   .contacts-footer{}
+   .contacts-footer__item{}
+   .contacts-footer__item:not(:last-child){
+    margin-bottom: 20px;
+   }
+   .contacts-footer__link{
+    max-width: 80%;
+    color: #666;
+    display: inline-block;
+    line-height: 24px;
+   }
+   
+  
+   
+   .body-footer__menu{}
+   
+   .menu-footer{
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+   }
+   .menu-footer__column{}
+   .menu-footer__title{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 20px;
+   }
+   .menu-footer__list{}
+   .menu-footer__item{}
+   .menu-footer__item:not(:last-child){
+    margin-bottom: 16px;
+   }
+   .menu-footer__link{
+       color: #666;
+   }
+   .menu-footer__link:hover{
+       text-decoration: underline;
+   }
+   
+   .body-footer_social{}
+   
+   .social-footer{}
+   .social-footer__title{
+    text-transform: uppercase;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-bottom: 12px;
+   }
+   .social-footer__items{
+    display: inline-flex;
+    gap: 30px;
+    align-items: center;
+   }
+   .social-footer__item{}
+   
+   
+   .footer__copy{
+       padding-top: 80px;
+       text-align: center;
+   }
+   @media (max-width: 991.98px){
+      .footer{
+         padding-top: 30px;
+         padding-bottom: 30px;
+       }
+       .body-footer{
+           flex-wrap: wrap;
+           justify-content: space-between;
+       }
+       .body-footer__column:first-child{
+           flex: 1 1 100%;
+       }
+       .body-footer__column_full{
+           flex: 0 1 50%;
+       }
+       .menu-footer{
+           display: flex;
+           gap: 50px;
+           justify-content: space-between;
+       }
+   }
+   
+   
+   
+   @media (max-width: 800px){
+       .footer__copy{
+           padding-top: 30px;
+       }
+   }
