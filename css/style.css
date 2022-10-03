@@ -74,7 +74,6 @@ body{
 }
 
 .header-infor{
-    font-family: sans-serif;
     font-size: 60px;
     font-weight: 700;
 } 
@@ -102,6 +101,14 @@ body{
     font-size: 16px;
     border-radius: 16px;
     padding: 20px 43px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.btn-1:hover{
+   background-color: #000;
+   transition-property: all;
+   transition-duration: 0.5s;
 }
 
 /*-----------------------------------Section-1*/
@@ -135,7 +142,7 @@ body{
 
 .brands-items{
     display: flex;
-    column-gap: 30px;
+    column-gap: 65px;
     padding-top: 125px;
 }
 
@@ -147,6 +154,10 @@ body{
 
 .item-brands__img{
     margin: auto;
+}
+.items-brands__img{
+    display: flex;
+    gap: 120px;
 }
 
  /*-----------------------------------Section-2*/
@@ -230,6 +241,7 @@ body{
 .work-title{
     display: flex;
     align-items: center;
+    padding: 0px 117px 0px 0px;
     justify-content: space-between;
 }
 
@@ -273,6 +285,9 @@ body{
     margin-top: 20px;
     max-height: 20px;
 }
+.work-img{
+
+}
 
 .item-work__icon{
     max-width: 20px;
@@ -293,6 +308,7 @@ body{
 
 .work-home{
     display: flex;
+    gap: 105px;
 }
 
 .work-monts{
@@ -313,7 +329,7 @@ body{
 .button-click{
     color: #2076FF;
     font-weight: 400;
-    padding: 12px 60px;
+    padding: 12px 73px;
     border: 1px solid #2076FF;
     border-radius: 7px;
     font-size: 18px;
@@ -357,7 +373,7 @@ body{
 
 .home-price{
     display: flex;
-    gap: 105px;
+    gap: 141px;
     margin-bottom: 130px;
 }
 
@@ -559,30 +575,40 @@ body{
     padding-top: 80px;
     padding-bottom: 40px;
    }
+
+
 .footer__container{}
 .footer__body{}
    
+
 .body-footer{
     display: flex;
     gap: 115px;
    }
+
 .body-footer__column{
     flex: 0 1 33.333%;
    }
+
 .body-footer__logo{
     display: inline-block;
     
    }
+
 .body-footer__logo:not(:last-child){
     margin-bottom: 28px;
    }
+
+
 .body-footer__contacts{}
-   
 .contacts-footer{}
 .contacts-footer__item{}
+
+
 .contacts-footer__item:not(:last-child){
     margin-bottom: 20px;
    }
+
 .contacts-footer__link{
     max-width: 80%;
     color: #666;
@@ -599,7 +625,9 @@ body{
     gap: 120px;
     justify-content: center;
    }
+
 .menu-footer__column{}
+
 .menu-footer__title{
     text-transform: uppercase;
     color: #000;
@@ -609,13 +637,17 @@ body{
     margin-bottom: 20px;
    }
 .menu-footer__list{}
+
 .menu-footer__item{}
+
 .menu-footer__item:not(:last-child){
     margin-bottom: 16px;
    }
+
 .menu-footer__link{
     color: #666;
    }
+
 .menu-footer__link:hover{
     text-decoration: underline;
    }
@@ -623,6 +655,7 @@ body{
 .body-footer_social{}
    
 .social-footer{}
+
 .social-footer__title{
     text-transform: uppercase;
     color: #000;
@@ -631,6 +664,7 @@ body{
     line-height: 27px;
     margin-bottom: 12px;
    }
+
 .social-footer__items{
     display: inline-flex;
     gap: 30px;
@@ -643,32 +677,215 @@ body{
     padding-top: 80px;
     text-align: center;
    }
+/*-------------------------------------Hamburger*/
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background-color: #000;
+}
+
+
+
+
+
+/*-------------------------------------Adaptiv*/
+
+@media (max-width: 1199px){
+    
+     
+    .header-img{
+        max-width: 50%;
+    }
+
+    .header-infor{
+       font-size: 50px;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    .button{
+        display: none;
+    }
+}
+
+@media (max-width: 1099px){
+    .brands-items {
+        display: block;
+        padding-top: 125px;
+    }
+
+    .items-brands__img{
+        display: flex;
+        gap: 67px;
+        row-gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    
+}
+
+
+@media (max-width: 976.98px){
+   .nav-menu{
+        top: 0px;
+        flex-direction: column;
+        position: absolute;
+        background-color: #ebe9e9;
+        padding: 38px 53px 20px 20px;
+        border-radius: 0px 0px 0px 20px;
+        top: 0px;
+        row-gap: 40px;
+        right: -100%;
+        transition: 1s;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+   .nav-item{
+        margin: 16px 0;
+    }
+
+   .nav-menu.active{
+        right: 0;
+    }
+
+   .burger{
+        display: block;
+    }
+
+   .burger.active .bar:nth-child(2){
+    opacity: 0;
+    }
+
+   .burger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    }
+
+   .burger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+    }
+
+   .header-infor{
+        font-size: 43px;
+    }
+
+    .header-text {
+        padding: 10px 0px 28px 0px;
+        max-width: 410px;
+        color: #606176;
+        font-size: 14px;
+}
+
+}
+
+@media (max-width: 853px){
+    .header-img{
+        display: none;
+    }
+
+    .header-1 {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+        padding-top: 110px;
+    }
+
+    .header-content{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 383px){
+    .header-infor{
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 335px) {
+    .header-infor{
+        font-size: 27px;
+    }
+
+    .header-text {
+        padding: 10px 0px 28px 0px;
+        max-width: 410px;
+        color: #606176;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 287px) {
+    .header-infor{
+        font-size: 22px;
+    }
+
+    .button-1{
+        padding-top: 20px;
+        font-size: 14px;
+        font-weight: 600;
+     }
+
+    .btn-1 {
+        background: #F77E53;
+        color: #fff;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 12px 18px;
+        border-radius: 16px;
+        padding: 11px 9px;
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+
+    .item-brands__text{
+        font-size: 17px;
+        color: #606176;
+        padding-top: 10px;
+    }
+}
+
+
 @media (max-width: 991.98px){
     .footer{
         padding-top: 30px;
         padding-bottom: 30px;
-       }
+    }
+
     .body-footer{
         flex-wrap: wrap;
         justify-content: space-between;
-       }
+    }
+
     .body-footer__column:first-child{
         flex: 1 1 100%;
-       }
+    }
+
     .body-footer__column_full{
         flex: 0 1 50%;
-       }
+    }
+
     .menu-footer{
         display: flex;
         gap: 50px;
         justify-content: space-between;
-       }
-   }
+    }
+}
    
    
    
-   @media (max-width: 800px){
-       .footer__copy{
-           padding-top: 30px;
-       }
-   }
+@media (max-width: 800px){
+    .footer__copy{
+        padding-top: 30px;
+    }
+}
