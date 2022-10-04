@@ -1,21 +1,6 @@
 /*------------------------------------------------------------Scroll*/
 
-const anchors = document.querySelectorAll('a[href*="#"]')
-
-for (let anchor of anchors) {
-   anchor.addEventListener("click", function(event) {
-      event.preventDefault();
-      const blockID = anchor.getAttribute('href')
-      document.querySelector('' + blockID).scrollIntoView({
-         behavior: "smooth",
-         block: "start"
-      })
-   })
-}
-
-/*------------------------------------------------------------*/
-
-const scroll = document.querySelectorAll('a[href*="#')
+const anchors = document.querySelectorAll('a[href*="#')
 
 for(let anchor of anchors) {
    anchor.addEventListener("click", function(event) {
@@ -27,7 +12,6 @@ for(let anchor of anchors) {
       })
    })
 }
-
 /*------------------------------------------------------------Hamburger*/
 
 const burger = document.querySelector(".burger");

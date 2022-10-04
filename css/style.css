@@ -176,6 +176,10 @@ body{
     margin-left: 125px;
 }
 
+.social-footer__item{
+    min-height: 28px;
+}
+
 .favorite-text{
     font-family: sans-serif;
     font-weight: 700;
@@ -205,7 +209,7 @@ body{
  } 
 
  .title-3{
-    font-size: 44px;
+    font-size: 42px;
     font-weight: 700;
  }
 
@@ -234,14 +238,14 @@ body{
 
 .container-1{
     max-width: 1430px;
-    padding: 0 76px;
+    padding: 0 24px;
     margin: 0 auto;
 }
 
 .work-title{
     display: flex;
     align-items: center;
-    padding: 0px 117px 0px 0px;
+    
     justify-content: space-between;
 }
 
@@ -284,6 +288,7 @@ body{
     display: flex;
     margin-top: 20px;
     max-height: 20px;
+    margin-left: 70px;
 }
 .work-img{
 
@@ -292,8 +297,13 @@ body{
 .item-work__icon{
     max-width: 20px;
     display: flex;
+    
 
 }
+.work-infor{
+    
+}
+
 
 .item-work__time{
     display: flex;
@@ -308,7 +318,8 @@ body{
 
 .work-home{
     display: flex;
-    gap: 105px;
+    gap: 65px;
+    text-align: center;
 }
 
 .work-monts{
@@ -329,7 +340,7 @@ body{
 .button-click{
     color: #2076FF;
     font-weight: 400;
-    padding: 12px 73px;
+    padding: 12px 70px;
     border: 1px solid #2076FF;
     border-radius: 7px;
     font-size: 18px;
@@ -351,7 +362,7 @@ body{
 
 .container-2 {
     max-width: 1430px;
-    padding: 0 76px;
+    padding: 0 34px;
     margin: 0 auto;
 }
 
@@ -373,7 +384,7 @@ body{
 
 .home-price{
     display: flex;
-    gap: 141px;
+    gap: 181px;
     margin-bottom: 130px;
 }
 
@@ -717,6 +728,9 @@ body{
     .button{
         display: none;
     }
+    .why-photo{
+        display: none;
+    }
 }
 
 @media (max-width: 1099px){
@@ -785,8 +799,27 @@ body{
         max-width: 410px;
         color: #606176;
         font-size: 14px;
+    }
+
 }
 
+@media (max-width: 520px){
+    .why-info{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: space-between
+    }
+    .title-3{
+        font-size: 38px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 475px) {
+    .title-3{
+        font-size: 34px;
+        
+    }
 }
 
 @media (max-width: 853px){
@@ -825,10 +858,48 @@ body{
     }
 }
 
+@media (max-width: 310px) {
+    .button-click {
+        color: #2076FF;
+        font-weight: 400;
+        padding: 12px 45px;
+        border: 1px solid #2076FF;
+        border-radius: 7px;
+        font-size: 18px;
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+}
+
+@media (max-width: 250px) {
+    .button-click {
+        color: #2076FF;
+        font-weight: 400;
+        padding: 12px 25px;
+        border: 1px solid #2076FF;
+        border-radius: 7px;
+        font-size: 18px;
+        transition-property: all;
+        transition-duration: 0.5s;
+    }
+}
+
+
 @media (max-width: 287px) {
     .header-infor{
         font-size: 22px;
     }
+
+    .title-3{
+        font-size: 19px;
+        
+    }
+    
+     .why-item__text {
+        font-weight: 400;
+        padding-top: 12px;
+        font-size: 14px;
+}
 
     .button-1{
         padding-top: 20px;
@@ -852,6 +923,61 @@ body{
         font-size: 17px;
         color: #606176;
         padding-top: 10px;
+    }
+}
+@media (max-width: 1440px){
+    .work-home{
+        display: grid;
+        gap: 65px;
+        row-gap: 20px;
+        grid-template-columns: repeat();
+    }
+    .items-work{
+        display: none;
+    }
+}
+
+@media (max-width: 1199px){
+    .button-blue{
+        display: none;
+    }
+    .title-4 {
+        font-weight: 700;
+        font-size: 38px;
+}
+}
+
+@media (max-width: 1450px) {
+    .home-price{
+        display: grid;
+        margin-top: 130px;
+        justify-content: center;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width: 870px) {
+    .home-price{
+        display: grid;
+        margin-top: 130px;
+        justify-content: center;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+@media (max-width: 767px) {
+    .title-5 {
+        font-size: 38px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 605px) {
+    .title-5 {
+        font-size: 30px;
+        font-weight: 700;
     }
 }
 
